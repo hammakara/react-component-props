@@ -1,12 +1,21 @@
 function Footer() {
-    return (
-        <footer className="footer">
-            <p>សម្រាប់ព័ត៌មានបន្ថែម សូមទាក់ទងមកយើងខ្ញុំ</p>
-            <button className="buy-button" type="button">
-                ទិញ
-            </button>
-        </footer>
-    )
+  const hour = new Date().getHours()
+  const openHour = 8
+  const closeHour = 20
+  const isOpen = hour >= openHour && hour <= closeHour
+
+  return (
+    <footer className="footer">
+      <p>{isOpen ? "ហាងបើកដំណើរការ" : `ហាងយើងខ្ញុំបើកពី​ម៉ោង ${openHour}:00AM ដល់ម៉ោង ${closeHour}:00PM`}</p>
+      {
+        isOpen && (
+          <button className="buy-button" type="button">
+            ទិញ
+          </button>
+        )
+      }
+    </footer>
+  )
 }
 
 export default Footer

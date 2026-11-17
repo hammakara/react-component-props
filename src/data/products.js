@@ -5,7 +5,8 @@ export const products = [
     description: "Professional motion graphics and visual effects software.",
     price: 27.99,
     category: "Graphic Design",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS8z4bUROnyZLP0G2Xkrcv8uQxiF7nnBvC3OpgMyW3tg&s=10"
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS8z4bUROnyZLP0G2Xkrcv8uQxiF7nnBvC3OpgMyW3tg&s=10",
+    stockOut :false
   },
   {
     id: 2,
@@ -13,7 +14,8 @@ export const products = [
     description: "Professional image editing and graphic design software.",
     price: 22.99,
     category: "Graphic Design",
-    image: "https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg"
+    image: "https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg",
+    stockOut :true
   },
   {
     id: 3,
@@ -21,7 +23,8 @@ export const products = [
     description: "Vector graphics software for creating logos and illustrations.",
     price: 24.99,
     category: "Graphic Design",
-    image: "https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg"
+    image: "https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg",
+    stockOut :true
   },
   {
     id: 4,
@@ -29,22 +32,8 @@ export const products = [
     description: "Professional video editing software for creators.",
     price: 29.99,
     category: "Video Editing",
-    image: "https://upload.wikimedia.org/wikipedia/commons/4/40/Adobe_Premiere_Pro_CC_icon.svg"
+    image: "https://upload.wikimedia.org/wikipedia/commons/4/40/Adobe_Premiere_Pro_CC_icon.svg",
+    stockOut:false
   },
-  {
-    id: 5,
-    title: "Figma",
-    description: "Collaborative UI/UX design and prototyping tool.",
-    price: 15.00,
-    category: "UI/UX Design",
-    image: "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
-  },
-  {
-    id: 6,
-    title: "Figma",
-    description: "Collaborative UI/UX design and prototyping tool.",
-    price: 15.00,
-    category: "UI/UX Design",
-    image: "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
-  }
+
 ];

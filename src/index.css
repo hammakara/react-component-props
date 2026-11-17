@@ -147,6 +147,9 @@ body {
   border-radius: 2px;
   display: block;
 }
+.stockOut{
+  filter: grayscale(100%);
+}
 
 .product-info {
   display: flex;

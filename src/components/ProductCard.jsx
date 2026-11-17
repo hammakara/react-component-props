@@ -1,7 +1,8 @@
-function ProductCard({ title, description, price, category,image }) {
+function ProductCard({ title, description, price, category, image, stockOut }) {
   return (
     <div className="product-card">
       <img
+        className={stockOut ? "stockOut" : ""}
         src={image}
         alt="Adobe After Effects"
         width="115"
@@ -10,7 +11,7 @@ function ProductCard({ title, description, price, category,image }) {
       <div className="product-info">
         <h3>{title}</h3>
         <p>{description}</p>
-        <span>{price}</span>
+        <span>{stockOut ? "Stock Out" : price}</span>
         <span>{category}</span>
       </div>
     </div>

@@ -3,9 +3,9 @@ import Footer from "./components/Footer";
 import ProductSection from "./components/ProductSection";
 function App() {
   return (
-    <div className="container">
+    <div className="container ">
       <Header />
-      <main>
+      <main >
         <ProductSection/>
       </main>
       <Footer/>
